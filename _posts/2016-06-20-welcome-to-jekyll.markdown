@@ -9,15 +9,22 @@ create a repository : my-jekyll
 create `gh-pages` branch
 
 on local:
+
 clone repository `git clone`
+
 change branch `git checkout gh-pages`
 
 create jekyll website `jekyll new`
+
 change configuration baseurl : `my-jekyll`
+
 run `jekyll build`
 
+
 run `git add *`
+
 run `git commit -m "first jekyll"`
+
 run `git push`
 
 go to `https://pherdee.github.io/my-jekyll/`
