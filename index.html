@@ -2,143 +2,22 @@
 layout: default
 ---
 
+<div class="home">
 
-  <header class="jumbotron hero-spacer" style="background-color:#4DBCE9; color:#fff;margin:0px;">
-    <div class="container">
-      <h1 style="font-family:Raleway; font-weight:100;">Mobiliz AR-GE Blog!</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <h1 class="page-heading">Posts</h1>
 
-    </div>
-  </header>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-<div style="background-color:#fff;">
-  <div class="container">
-    <h1 class="page-heading">Posts</h1>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-  </div>
 </div>
-
-
-  <div class="container" style="padding:50px 0pc 50px;">
-    <!-- team -->
-    <div class="text-center" style="padding:50px 0px 50px;">
-      <h2>Team</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-md-3">
-          <div class="well beyaz-arkaplan text-center borderless">
-              <div class="text-center">
-                  <img class="img-circle" width="100" height="100" src="http://www.4living.ru/images/no-person.jpg">
-              </div>
-              <div>
-                  <h4>Member One</h4>
-                  <p><small>Some Info About Team member 1</small></p>
-              </div>
-          </div>
-      </div>
-
-    </div>
-  </div>
-
-<!-- eof-team -->

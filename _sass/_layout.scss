@@ -2,17 +2,18 @@
  * Site header
  */
 .site-header {
+    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: $navbar-height;
-    background-color: $navbar-background-color;
+    min-height: 56px;
+
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
     font-size: 26px;
-    font-weight: 200;
-    line-height: $navbar-height;
+    font-weight: 300;
+    line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -23,21 +24,9 @@
     }
 }
 
-.brand{
-  float:left;
-  padding-top:18px;
-  padding-leftl:15px;
-}
-.navbar-brand-logo .logo{
-    float: left;
-    overflow: hidden;
-    padding:1px;
-    /*width: 60px;*/
-}
-
 .site-nav {
     float: right;
-    line-height: $navbar-height;
+    line-height: 56px;
 
     .menu-icon {
         display: none;
@@ -111,7 +100,6 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    background-color: #ccc;
 }
 
 .footer-heading {
