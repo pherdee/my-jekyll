@@ -3,6 +3,8 @@ layout: post
 title:  "Create website with jekyll and serve on github!"
 date:   2016-06-20 17:29:43 +0300
 categories: jekyll update
+backcolor: 52575D
+fontcolor: 999
 ---
 On github :
 
