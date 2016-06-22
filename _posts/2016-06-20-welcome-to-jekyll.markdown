@@ -33,45 +33,18 @@ go to `https://pherdee.github.io/my-jekyll/`
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
+```php
+<?php
+public function toJsonStringArray($dataArray, $fieldName){
+  $resultArray = array();
+  foreach ($dataArray as $key => $val){
+    $resultArray[] = $val[$fieldName];
   }
+
+  return json_encode($resultArray);
 }
+?>
 ```
-
-```java
-public DashboardFuelInfoResponseDto getFuelInfo(Integer argUserId, Character argType, Integer argId, DateRangeDto argDateRange)
-	{
-		DashboardFuelInfoResponseDto fuelInfo = null;
-		List<Object> parameterList = new ArrayList<Object>();
-		parameterList.add(argUserId);
-		parameterList.add(argType);
-		parameterList.add(argId);
-		parameterList.add(argDateRange.getStart());
-		parameterList.add(argDateRange.getEnd());
-		try
-		{
-			fuelInfo = DatabaseUtil.callReadOnlyStoredProcedure(this.dataSource, StoredProcedureEnum.s_getDashboardFuelInfo, parameterList, new DashboardFuelInfoExtractor());
-
-		} catch (SQLException e)
-		{
-			throw new DAOException(e.getMessage(), e);
-		}
-
-		return fuelInfo;
-	}
-```
-
-{% highlight java %}
-@RequestMapping(value = "/settings/updateidlefuelconsumption", method = RequestMethod.POST)
-@ResponseBody
-public Object updateIdleFuelConsupmtion(NgUserDto argNgUserDto, @RequestBody @Valid FloatParamDto argFloatParam)
-{
-	return this.companyService.updateIdleFuelConsupmtion(argNgUserDto.getUserCompanyId(), argFloatParam.getFloatParam());
-}
-{% endhighlight %}
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this ~~post~~ to get an idea about how it works.
 
