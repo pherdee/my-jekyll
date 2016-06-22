@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
+<article class="post" style="background-color:#{{page.backcolor}}; padding:100px 0px 50px;">
+  <div class="container">
+    <header class="post-header" style="color:#{{page.fontcolor}}">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+  </div>
+</article>
+<div class="container" style="padding-bottom:40px;">
   <div class="post-content">
     {{ content }}
   </div>
-
-</article>
+</div>
