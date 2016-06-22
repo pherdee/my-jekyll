@@ -5,7 +5,9 @@ date:   2016-06-20 17:29:43 +0300
 categories: jekyll update
 ---
 On github :
+
 create a repository : my-jekyll
+
 create `gh-pages` branch
 
 on local:
