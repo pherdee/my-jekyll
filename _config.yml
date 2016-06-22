@@ -10,8 +10,8 @@ title: Mobiliz Ar-Ge Blog!
 email: argeblog@mobiliz.com.tr
 description: > # this means to ignore newlines until "baseurl:"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://fmobiliz.com.tr" # the base hostname & protocol for your site
+baseurl: "/my-jekyll" # the subpath of your site, e.g. /blog
+url: "http://mobiliz.com.tr" # the base hostname & protocol for your site
 twitter_username: fsonmezay
 github_username:  fsonmezay
 # logo-img: http://ferdisonmezay.com/2015/images/logo.png
