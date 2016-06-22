@@ -5,6 +5,34 @@ date:   2016-05-17 14:51:20 +0300
 categories: jekyll update
 backcolor: f0c301
 ---
+
+On github :
+
+create a repository : my-jekyll
+
+create `gh-pages` branch
+
+on local:
+
+clone repository `git clone`
+
+change branch `git checkout gh-pages`
+
+create jekyll website `jekyll new`
+
+change configuration baseurl : `my-jekyll`
+
+run `jekyll build`
+
+
+run `git add *`
+
+run `git commit -m "first jekyll"`
+
+run `git push`
+
+go to `https://pherdee.github.io/my-jekyll/`
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
